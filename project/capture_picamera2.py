@@ -13,7 +13,7 @@ cam.configure(cfg)
 cam.start()
 time.sleep(0.8)  # дати AE/AWB стабілізуватись
 
-path = f"/home/mykodia/car/server/images/photo_{datetime.now().strftime('%Y%m%d_%H%M%S')}.jpg"
+path = f"/repo/adeept-car/images/photo_{datetime.now().strftime('%Y%m%d_%H%M%S')}.jpg"
 cam.capture_file(path)
 cam.stop()
 print("Saved:", path)
